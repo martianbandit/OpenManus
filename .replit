@@ -18,3 +18,21 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python run_mcp.py"
+
+[[workflows.workflow]]
+name = "Run Flow"
+author = 32686184
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python run_flow.py"
+
+[[workflows.workflow]]
+name = "Run Main"
+author = 32686184
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "python main.py"
